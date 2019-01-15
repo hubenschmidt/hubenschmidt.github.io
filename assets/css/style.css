@@ -1,0 +1,92 @@
+html{
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  background-image: url("vertical-waves.png");
+}
+.main-content {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+header{
+  padding-top: 40px;
+  background: #ffffff;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  border-bottom-color: #cccccc;
+  border-bottom-width: 2px; 
+  border-bottom-style: solid;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  
+}
+
+.nav{
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+h1 {
+  display: inline;
+  height: 100%;
+}
+
+.menu{
+  display: inline;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  float: right;
+  padding: 5px;
+}
+
+
+
+.content2{
+  margin-top: 100px;
+  background-color: #ffffff;
+
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #666666;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  clear: both;
+}
+
+img.resize {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+img.portfolio {
+  width: 100%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  flex: 50%;
+}
+
+.row {
+  display: flex;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
