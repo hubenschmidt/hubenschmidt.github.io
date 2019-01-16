@@ -4,25 +4,38 @@ html{
 }
 
 body{
-  background-image: url("vertical-waves.png");
+  background-image: url("blue-wood.jpg");
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  line-height: 1.4285em;
 }
 .main-content {
   margin: 0 auto;
   max-width: 960px;
+  margin-top: 100px;
+  position: static;
 }
 
 header{
-  padding-top: 40px;
-  background: #ffffff;
-  font-family: 'Georgia', Times, Times New Roman, serif;
-  border-bottom-color: #cccccc;
+  padding-top: 30px;
+  border-bottom-color: #00274c;
   border-bottom-width: 2px; 
   border-bottom-style: solid;
   position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
-  
+  color: #ffcb05;
+  background-image: url("trans-black-60.png");
+}
+
+p{
+  font-size: 12px;
+}
+h1{
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  margin-left: 5px;
 }
 
 .nav{
@@ -37,6 +50,7 @@ h1 {
 
 .menu{
   display: inline;
+  margin-right: 5px;
 }
 
 li {
@@ -48,9 +62,32 @@ li {
 
 
 
+a:link {
+  color: #ffffff;
+}
+
+/* visited link */
+a:visited {
+  color: #ffffff;
+}
+
+/* mouse over link */
+a:hover {
+  color: #ffcb05;
+}
+
+/* selected link */
+a:active {
+  color: #ffffff;
+}
+
 .content2{
-  margin-top: 100px;
-  background-color: #ffffff;
+  margin-top: 0px;
+  /* background-color: #ffffff; */
+  /* background-image: url("trans-black-60.png");
+  border-color: #00274c; 
+  border-width: 2px; 
+  border-style: solid; */
 
 }
 
@@ -58,11 +95,18 @@ footer {
   left: 0;
   bottom: 0;
   text-align: center;
-  background-color: #666666;
+  /* background-color: #666666; */
+  background-image: url("trans-black-60.png");
   width: 100%;
-  height: 50px;
-  position: absolute;
+  height: 20px;
+  position: fixed;
   clear: both;
+  border-top-color: #00274c; 
+  border-top-width: 2px; 
+  border-top-style: solid;
+  font-size: 12px;
+
+  
 }
 
 img.resize {
