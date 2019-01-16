@@ -53,14 +53,22 @@ h1 {
   margin-right: 5px;
 }
 
-li {
+li.menu {
   list-style: none;
   display: inline;
   float: right;
   padding: 5px;
 }
 
+ul.resume{
+  list-style: none;
+}
 
+li.resume{
+  font-size: 12px;
+  list-style: none;
+  margin-top:-20px;
+}
 
 a:link {
   color: #ffffff;
@@ -90,6 +98,8 @@ a:active {
   border-style: solid; */
 
 }
+
+
 
 footer {
   left: 0;
