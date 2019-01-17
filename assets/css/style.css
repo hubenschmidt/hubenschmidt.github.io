@@ -8,11 +8,12 @@ body{
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
   line-height: 1.4285em;
+ 
 }
 .main-content {
   margin: 0 auto;
   max-width: 960px;
-  margin-top: 100px;
+  margin-top: 70px;
   position: static;
 }
 
@@ -38,6 +39,7 @@ h1{
   margin-left: 5px;
   display: inline;
   height: 100%;
+  /* letter-spacing: 1px; */
 }
 
 .nav{
@@ -46,12 +48,13 @@ h1{
 }
 
 h3 {
-  font-size: 24px;
-  
+  font-size: 16px;
+  margin-bottom: -10px;
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 .menu{
@@ -73,7 +76,11 @@ ul.resume{
 li.resume{
   font-size: 14px;
   list-style: none;
-  margin-top:-20px;
+  margin-top:-25px;
+}
+
+.resumebullet{
+  margin-top: 0px;
 }
 
 a:link {
@@ -162,7 +169,7 @@ input[type=text] {
 input[type=text].message {
   width: 100%;
   padding-bottom: 100px;
-  padding-left: 3px;
+  /* padding-left: 3px; */
   /* margin: 40px 0; */
   box-sizing: border-box;
 }
