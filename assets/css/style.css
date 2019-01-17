@@ -65,7 +65,7 @@ ul.resume{
 }
 
 li.resume{
-  font-size: 12px;
+  font-size: 14px;
   list-style: none;
   margin-top:-20px;
 }
@@ -91,6 +91,7 @@ a:active {
 
 .content2{
   margin-top: 0px;
+  margin-bottom: 40px;
   /* background-color: #ffffff; */
   /* background-image: url("trans-black-60.png");
   border-color: #00274c; 
@@ -143,4 +144,19 @@ img.portfolio {
   content: "";
   clear: both;
   display: table;
+}
+
+input[type=text] {
+  width: 100%;
+  /* padding: 12px 20px;
+  margin: 8px 0; */
+  box-sizing: border-box;
+}
+
+input[type=text].message {
+  width: 100%;
+  padding-bottom: 100px;
+  padding-left: 3px;
+  /* margin: 40px 0; */
+  box-sizing: border-box;
 }
