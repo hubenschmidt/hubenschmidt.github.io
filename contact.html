@@ -1,45 +1,122 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-    <title>
-        William Hubenschmidt's Basic Portfolio Page
-    </title>
+<html lang="en">
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href=https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:700;">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto;">
+
+    <title>Contact Form</title>
 
 </head>
+
 <body>
-    <header>
-        <section class="nav">
-          <h1>WILLIAM ROY HUBENSCHMIDT</h1>
-          <ul class="menu">
-            <a href="index.html"><li class="menu">About</li></a> 
-            <a href="portfolio.html"><li class="menu">Portfolio</li></a> 
-            <a href="contact.html"><li class="menu">Contact</li></a> 
-          </ul>
-        </section>
-      </header>
-      <section class="main-content">
-          <section id="form-content">
-            <!-- <h2>Contact</h2> -->
-            <form>
-                Name <br>
-                <input type="text" name="firstname"><br>
-                Email <br>
-                <input type="text" name="email"><br>
-                Message<br>
-                <input class="message" type="text" name="message"><br>
-                <input type="submit" value="Submit">
-            </form>
-          </section>
-      </section>
-          <footer>
-            2019
-          </footer>
-        </section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-default ">
+        <a class="navbar-brand" href="#">
+            <h1>William Hubenschmidt</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xl-8 offset-xl-2 py-5">
+
+                <form id="contact-form" method="post" action="#" role="form">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="form_name">First Name</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name">
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Last Name</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control"
+                                        placeholder="Please enter your last name">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="form_email">Email</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email">
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me"
+                                        rows="4"></textarea>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="#" class="btn btn-success btn-send" value="Send message">
+                                <!-- disable submit button
+                                        <input type="submit" class="btn btn-success btn-send" value="Send message"> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
     </div>
+
+
+
+    <footer>
+        2019
+    </footer>
+
+    <!-- js scripts here -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>

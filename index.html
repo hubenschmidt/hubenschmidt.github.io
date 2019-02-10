@@ -1,79 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>William Hubenschmidt's Basic Portfolio Page</title>
 
-<!-- CSS -->
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:700;">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href=https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:700;">
+
+    <title>Bootstrap Portfolio</title>
 
 </head>
+
 <body>
-    <header>
-      <section class="nav">
-        <h1>WILLIAM ROY HUBENSCHMIDT</h1>
-        <ul class="menu">
-          <a href="index.html"><li class="menu">About</li></a> 
-          <a href="portfolio.html"><li class="menu">Portfolio</li></a> 
-          <a href="contact.html"><li class="menu">Contact</li></a> 
-        </ul>
-      </section>
-    </header>
-    <section class="main-content">
-      <div class="content2">
-          <!-- <h2>About Me</h2> -->
-          <p class="resume">
-            <a href="mailto:whubenschmidt@gmail.com">whubenschmidt at gmail dot com</a>
-            <a href="http://www.github.com/hubenschmidt">github</a>
-            <a href="http://www.linkedin.com/hubenschmidt">linkedin</a>
-          </p class="resume">
-            <!-- <p>
-              I am a student and full stack developer in-training at Columbia Engineering Coding Bootcamp. Located in New York City.
-            </p> -->
-            <h3>Technical Skills</h3>
-            <p>HTML5, CSS3, JavaScript, jQuery, Bootstrap, Express.js, React.js, Node.js, Database Theory, MongoDB, MySQL.</p>
-            <section class="resume">
-            <h3>Employment History</h3>
-            <ul class="resume">
-            <li class="resumebullet"><h5>99¢ Dreams Records & 99¢ Radio, New York, NY</h5></li>
-            <ul><li class="resume">Executive Producer, Jun 2014 - Jan 2019</li></ul>
-            <li class="resumebullet"><h5>Bicycle Courier, New York, NY</h5></li>
-            <ul><li class="resume">Nov 2016 - Jan 2019</li></ul>
-            <li class="resumebullet"><h5>Correctional Association of New York, New York, NY</h5></li>
-            <ul><li class="resume">Major Gifts Officer, Sep 2015 - Mar 2016</li></ul>
-            <li class="resumebullet"><h5>Fundraising and Database Consultant, New York, NY</h5></li>
-            <ul><li class="resume">Mar 2013 - May 2015</li></ul>
-            <li class="resumebullet"><h5>Amnesty International USA, New York, NY</h5></li>
-            <ul><li class="resume">Development Associate, Office of the Executive Director, Jun 2012 - Jan 2013</li></ul>
-            <li class="resumebullet"><h5>Robert F. Kennedy Young Leaders, New York, NY</h5></li>
-            <ul><li class="resume">Co-Founder & Program Manager, May 2011 - May 2013</li></ul>
-            <li class="resumebullet"><h5>Robert F. Kennedy Human Rights, New York, NY</h5></li>
-            <ul><li class="resume">Database Administrator, May 2011 - Jun 2012</li></ul>
-            <li class="resumebullet"><h5>AmeriCorps VISTA, Austin, TX & New York, NY</h5></li>
-            <ul><li class="resume">Fundraising and Technology ServiceCorps Member, Apr 2009 - May 2011</li></ul>
-            <li class="resumebullet"><h5>University Musical Society, New York, NY</h5></li>
-            <ul><li class="resume">Programming Associate & Box Office Associate, September 2005 - Apr 2008</li></ul>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-default ">
+        <a class="navbar-brand" href="#">
+            <h1>William Hubenschmidt</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
             </ul>
+        </div>
+    </nav>
 
-            <h3>Education</h3>
-            <ul class="resume">
-            <li class="resumebullet"><h5>Columbia Engineering Full Stack Web Development Bootcamp, New York, NY</h5></li>
-            <ul><li class="resume">January 2019 - July 2019</li></ul>
-            <li class="resumebullet"><h5>University of Michigan, Ann Arbor, MI</h5></li>
-            <ul><li class="resume">B.A., American Culture/Music, Aug 2004 - Apr 2008</li></ul>
-            </ul>
-            </section>
-            <!-- <img class="resize" src="assets/images/profilepic.jpg" alt="photo of William"> -->
-      </div>
-    </section>
-    <footer>
-      2019
-    </footer>
-  
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p><a href="mailto:whubenschmidt@gmail.com">whubenschmidt at gmail dot com</a>
+                    <a href="http://www.github.com/hubenschmidt">github</a>
+                    <a href="http://www.linkedin.com/hubenschmidt">linkedin</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>Technical Skills</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p>HTML5, CSS3, JavaScript, jQuery, Bootstrap, Express.js, React.js, Node.js, Database Theory, MongoDB,
+                    MySQL.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>Employment History</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul class="resume">
+                    <li class="resumebullet">
+                        <h6>99¢ Dreams Records & 99¢ Radio, New York, NY</h6>
+                    </li>
+                    <ul>
+                        <li class="resume">Executive Producer, Jun 2014 - Jan 2019</li>
+                    </ul>
+                    <li class="resumebullet">
+                        <h6>Bicycle Courier, New York, NY</h6>
+                    </li>
+                    <ul>
+                        <li class="resume">Nov 2016 - Jan 2019</li>
+                    </ul>
+                    <li class="resumebullet">
+                        <h6>Correctional Association of New York, New York, NY</h6>
+                    </li>
+                    <ul>
+                        <li class="resume">Major Gifts Officer, Sep 2015 - Mar 2016</li>
+                    </ul>
+                    <li class="resumebullet">
+                        <h6>Fundraising and Database Consultant, New York, NY</h6>
+                    </li>
+                    <ul>
+                        <li class="resume">Mar 2013 - May 2015</li>
+                    </ul>
+                    <li class="resumebullet">
+                        <h6>Amnesty International USA, New York, NY</h6>
+                    </li>
+                    <ul>
+                        <li class="resume">Development Associate, Office of the Executive Director, Jun 2012 - Jan 2013</li>
+                    </ul>
+                    <li class="resumebullet">
+                        <h6>Robert F. Kennedy Young Leaders, New York, NY</h6>
+                    </li>
+                    <ul>
+                        <li class="resume">Co-Founder & Program Manager, May 2011 - May 2013</li>
+                    </ul>
+                    <li class="resumebullet">
+                        <h6>Robert F. Kennedy Human Rights, New York, NY</h6>
+                    </li>
+                    <ul>
+                        <li class="resume">Database Administrator, May 2011 - Jun 2012</li>
+                    </ul>
+                    <li class="resumebullet">
+                        <h6>AmeriCorps VISTA, Austin, TX & New York, NY</h6>
+                    </li>
+                    <ul>
+                        <li class="resume">Fundraising and Technology ServiceCorps Member, Apr 2009 - May 2011</li>
+                    </ul>
+                    <li class="resumebullet">
+                        <h6>University Musical Society, Ann Arbor, MI</h6>
+                    </li>
+                    <ul>
+                        <li class="resume">Programming Associate & Box Office Associate, Sep 2005 - Apr 2008</li>
+                    </ul>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>Education</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul class="resume">
+                    <li class="resumebullet">
+                        <h6>Columbia Engineering Full Stack Development Bootcamp, New York, NY</h6>
+                    </li>
+                    <ul>
+                        <li class="resume">Jan 2019 - Jul 2019</li>
+                    </ul>
+                    <li class="resumebullet">
+                        <h6>University of Michigan, Ann Arbor, MI</h6>
+                    </li>
+                    <ul>
+                        <li class="resume">B.A., American Culture/Music, Aug 2004 - Apr 2008</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            2019
+        </footer>
+
+        <!-- js scripts here -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+
 </body>
+
 </html>

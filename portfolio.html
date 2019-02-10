@@ -1,48 +1,111 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-    <title>
-        William Hubenschmidt's Basic Portfolio Page
-    </title>
+<html lang="en">
 
-    <!-- CSS -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href=https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:700;">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto;">
+
+    <title>Bootstrap Portfolio</title>
 
 </head>
+
 <body>
-    <header>
-        <section class="nav">
-            <h1>WILLIAM ROY HUBENSCHMIDT</h1>
-                <ul class="menu">
-                    <a href="index.html"><li class="menu">About</li></a> 
-                    <a href="portfolio.html"><li class="menu">Portfolio</li></a> 
-                    <a href="contact.html"><li class="menu">Contact</li></a> 
-                  </ul>
-        </section>
-    </header>
-    <section class="main-content">
-        <div class="content2">
-            <section id="portfolio-content">
-                <h2>Pictures of my cat, Miso</h2>
-                <div class="row">
-                <div class="column">
-                    <img class="portfolio" src="assets/images/sample1.jpg" alt="First sample of William's work">
-                    <img class="portfolio" src="assets/images/sample2.jpg" alt="Second sample of William's work">
-                    <img class="portfolio" src="assets/images/sample3.jpg" alt="Third sample of William's work">
-                </div>            
-                <div class="column">
-                    <img class="portfolio" src="assets/images/sample4.jpg" alt="Fourth sample of William's work">
-                    <img class="portfolio" src="assets/images/sample5.jpg" alt="Fifth sample of William's work">
-                </div>
-            </div>            
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-default">
+        <a class="navbar-brand" href="#">
+            <h1>William Hubenschmidt</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+            </ul>
         </div>
-    </section>
-          <footer>
-            2019
-          </footer>
-        </section>
-    
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p><a href="mailto:whubenschmidt@gmail.com">whubenschmidt at gmail dot com</a>
+                    <a href="http://www.github.com/hubenschmidt">github</a>
+                    <a href="http://www.linkedin.com/hubenschmidt">linkedin</a></p>
+            </div>
+        </div>
+
+
+        <h2 class="my-4 text-center text-lg-left">Portfolio</h2>
+        <div class="row text-center text-lg-left">
+            <div class="col-sm-6">
+                <a href="https://hubenschmidt.github.io/unit-4-game/" class="d-block mb-4 h-1000">
+                    <img class="img-fluid img-thumbnail" src="assets/images/thumbnails/portfolioThumb1.jpg" alt="responsive img portfolio 1">
+                </a>
+                <div class="portfolioBlock">
+                    <h6>Unit 4 Game - Haribo Collector</h6>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <!-- <a href="assets/images/miso2.jpg" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="assets/images/thumbnails/thumbnail_miso2.jpg" alt="responsive img"> -->
+                </a>
+            </div>
+        </div>
+
+        <div class="row text-center text-lg-left">
+            <div class="col-sm-6">
+                <!-- <a href="assets/images/miso3.jpg" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="assets/images/thumbnails/thumbnail_miso3.jpg" alt="responsive img">
+                </a> -->
+            </div>
+            <div class="col-sm-6">
+                <!-- <a href="assets/images/miso4.jpg" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="assets/images/thumbnails/thumbnail_miso4.jpg" alt="responsive img">
+                </a> -->
+            </div>
+        </div>
+
+        <div class="row text-center text-lg-left">
+            <div class="col-sm-6">
+                <!-- <a href="assets/images/miso5.jpg" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="assets/images/thumbnails/thumbnail_miso5.jpg" alt="responsive img">
+                </a> -->
+            </div>
+            <div class="col-sm-6">
+                <!-- <a href="assets/images/miso6.jpg" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="assets/images/thumbnails/thumbnail_miso6.jpg" alt="responsive img">
+                </a> -->
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        2019
+    </footer>
+
+    <!-- js scripts here -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
