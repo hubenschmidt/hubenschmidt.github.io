@@ -2,7 +2,6 @@ h1{
     font-family: 'Nunito', sans-serif;
     font-size: 32px;
     color: #ffcb05;
-   
     /* letter-spacing: 1px; */
   }
 
@@ -10,16 +9,15 @@ body{
     background-image: url("blue-wood.jpg");
     color: white;
     min-height: 100%;
-    
 }
 
 .container{
-    padding-top:70px;
+    padding-top:5px;
 }
 
 .navbar{
     background-image: url("blue-wood.jpg");
-    position: fixed;
+    position: static;
     width: 100%;
     border-bottom-color: #00274c;
     border-bottom-width: 2px; 
@@ -27,16 +25,6 @@ body{
     z-index:1;
 }
 
-/* .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color:white;
-} */
-/* .navbar-light .navbar-nav .nav-link {
-    color: white;
-} */
-
-/* .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-    color: grey;
-} */
 
 li.menu {
     list-style: none;
