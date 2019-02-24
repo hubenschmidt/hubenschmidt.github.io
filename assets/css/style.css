@@ -25,6 +25,16 @@ body{
     z-index:1;
 }
 
+img {
+    opacity: 1;
+   
+  }
+  
+  img:hover {
+    opacity: .85;
+    
+  }
+
 
 li.menu {
     list-style: none;
