@@ -1,83 +1,102 @@
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    background-size: cover;
+    
+  }
+
+  /* video {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+} */
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(
+        to top,
+        black,
+        black, 
+        rgba(255, 0, 0, 0));
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    
+  }
+
+  .below{
+      
+  }
+
+  a{
+    color: #42FFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 5px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    /* background-image: url("trans-black-60.png"); */
+  
+  }
+  
+  a:hover, a:active { 
+    color: yellow;
+    text-decoration: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif;
+   }
 
 h1{
-    font-family: 'Nunito', sans-serif;
-    font-size: 32px;
-    color: #ffcb05;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    
     
   }
 
 body{
-    background-image: url("blue-wood.jpg");
+    /* background-image: url("blue-wood.jpg"); */
     color: white;
-    min-height: 100%;
+    /* min-height: 100%; */
+    font-size:15px;
   
   letter-spacing: -.1px;
     
     color: white;
     
     padding: 0 0 28px 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
     padding-top:5px;
-}
-
-.navbar{
-    background-image: url("blue-wood.jpg");
-    position: static;
-    width: 100%;
-    border-bottom-color: #00274c;
-    border-bottom-width: 2px; 
-    border-bottom-style: solid;
-    z-index:1;
-}
-
-img {
-    opacity: 1;
-   
-  }
-  
-  img:hover {
-    opacity: .85;
     
-  }
-
-
-li.menu {
-    list-style: none;
-}
-      
-ul.resume{
-    list-style: none;
-}
-      
-li.resume{
-    list-style: none;
-    margin-top:-5px;
-}
-      
-.resumebullet{
-    margin-top: 10px;
+    position: absolute;
+    
 }
 
-
-.btn-success {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-}
 
 footer {
     left: 0;
     bottom: 0;
     text-align: center;
-    background-image: url("trans-black-60.png");
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background-image: url("trans-black-60.png"); */
     width: 100%;
     height: 20px;
     position: fixed;
     clear: both;
-    border-top-color: #00274c; 
-    border-top-width: 2px; 
-    border-top-style: solid;
+    border-top-color: yellow; 
+    border-top-width: 1px; 
+    border-top-style: ridge;
     font-size: 12px;
   } 
