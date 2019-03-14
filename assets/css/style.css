@@ -1,22 +1,4 @@
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    width: auto; height: auto; z-index: -100;
-    background-size: cover;
-    
-  }
 
-  /* video {
-    position: fixed; right: 0; bottom: 0;
-    min-width: 100%; min-height: 100%;
-    width: auto; height: auto; z-index: -100;
-    background: url(polina.jpg) no-repeat;
-    background-size: cover;
-} */
 
 /* Add some content at the bottom of the video/page */
 .content {
@@ -26,15 +8,11 @@
         to top,
         black,
         black, 
-        rgba(255, 0, 0, 0));
+        rgba(0, 0, 0, 0));
     color: #f1f1f1;
+    
     width: 100%;
     padding: 20px;
-    
-  }
-
-  .below{
-      
   }
 
   a{
@@ -43,47 +21,48 @@
     padding-left: 5px;
     padding-bottom: 3px;
     padding-top: 1px;
+    margin:0px;
+    font-size:13px;
     /* background-image: url("trans-black-60.png"); */
-  
   }
   
   a:hover, a:active { 
     color: yellow;
     text-decoration: none;
   }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Libre Baskerville', serif;
+ 
+   h1 {
+    font-family: 'Asap', sans-serif;
+    color: yellow;
    }
 
-h1{
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-    
-    
-  }
+   h2, h3, h4, h5, h6 {
+       color:white;
+       background-color: rgba(0, 0, 0, 0.5);
+   }
 
+
+ 
 body{
-    /* background-image: url("blue-wood.jpg"); */
-    color: white;
-    /* min-height: 100%; */
+    background-image: url("abstractbg.png");
     font-size:15px;
-  
+    background-repeat: no-repeat;
   letter-spacing: -.1px;
-    
-    color: white;
-    
+    background-color: black;
     padding: 0 0 28px 0;
     font-family: 'Roboto', sans-serif;
 }
 
-.container{
-    padding-top:5px;
-    
-    position: absolute;
-    
+@media screen and (max-width: 640px){
+    body{
+        background-image: url("abstractbg640.png");
+    }
 }
 
+.container{
+    padding-top:5px;
+    position: absolute;
+}
 
 footer {
     left: 0;
@@ -98,5 +77,20 @@ footer {
     border-top-color: yellow; 
     border-top-width: 1px; 
     border-top-style: ridge;
-    font-size: 12px;
+    font-size: 10px;
+    color: white;
   } 
+
+  .img-thumbnail{
+      background: none;
+      border:none;
+     
+  }
+
+  img:hover{
+      opacity:.75;
+  }
+
+  img:active{
+      opacity:.8;
+  }
