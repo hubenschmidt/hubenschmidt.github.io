@@ -33,6 +33,15 @@
     font-size:13px;
     /* background-image: url("trans-black-60.png"); */
   }
+
+  .poem{
+    
+    font-family: 'Cedarville Cursive', cursive;
+    font-size:16px;
+    color:silver; 
+    background:none
+
+  }
   
   a:hover, a:active { 
     color: yellow;
@@ -53,13 +62,15 @@
 
  
 body{
+    
     background-image: url("abstractbg.png");
     font-size:15px;
     background-repeat: no-repeat;
   letter-spacing: -.1px;
     background-color: black;
-    padding: 0 0 28px 0;
+    
     font-family: 'Roboto', sans-serif;
+    min-height: 100%;
 }
 
 @media screen and (max-width: 640px){
@@ -72,6 +83,19 @@ body{
     padding-top:5px;
     position: absolute;
 } */
+
+
+
+.navbar{
+  position: fixed;
+ 
+}
+
+.menu{
+  font-size:15px;
+  color: rgba(255, 0, 0, 0.904);
+}
+
 
 footer {
     left: 0;
@@ -86,7 +110,7 @@ footer {
     border-top-color: yellow; 
     border-top-width: 1px; 
     border-top-style: ridge;
-    font-size: 10px;
+    
     color: white;
   } 
 
