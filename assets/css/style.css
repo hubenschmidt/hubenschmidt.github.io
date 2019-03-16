@@ -10,9 +10,15 @@
         black, 
         rgba(0, 0, 0, 0));
     color: #f1f1f1;
-    
+    line-height: 28px;
     width: 100%;
     padding: 20px;
+  }
+
+  @media screen and (max-width: 320px){
+    .content{
+      line-height: 18px;
+    }
   }
 
   a{
@@ -167,22 +173,28 @@ footer {
   body {
     margin: 0;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 18px;
     /* background: #002935; */
  }
 
+
+
  .wrapper{
-  background-color: rgba(0, 28, 51, 0.7);
+  background-color: rgba(7, 34, 75, 0.9);
   margin-right:-15px;
 
  }
   
   body, button, input, select, textarea {
-    font-family: 'Conso', Courier New, monospace;
+    /* font-family: 'Conso', Courier New, monospace; */
+    font-family: 'Anonymous Pro', monospace;
+    /* letter-spacing: .2px; */
     color: #f8f8f2; }
   
   a {
-    color: #ec007c;
+    /* color: #ec007c; */
+    color: fuchsia;
+    /* color: white; */
     text-decoration: none; }
   
   a:hover {
