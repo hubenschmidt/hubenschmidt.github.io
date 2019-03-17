@@ -22,18 +22,7 @@
     }
   }
 
-  a{
-    
-    /* background-color: rgba(0, 0, 0, 0); */
-    /* padding-left: 5px;
-    padding-bottom: 3px;
-    padding-top: 1px; */
-    padding: 2.5px;
-    padding-bottom: 1px;
-    margin:0px;
-    font-size:16px;
-    /* background-image: url("trans-black-60.png"); */
-  }
+
 
   .poem{
     
@@ -65,7 +54,7 @@
 
 body{
     background-image: url("abstractbg.png");
-    font-size:15px;
+    font-size:16px;
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;   
 }
@@ -113,7 +102,7 @@ footer {
 
   .selected {
     color: #00303e;
-    background: #0096c1; 
+    background: #0057c1; 
   }
   
   .white {
@@ -155,11 +144,10 @@ footer {
     color: #f8f8f2; }
   
   a {
-    color: rgb(230, 26, 145);
-    text-decoration: none; }
-  
- 
-  
+    color: rgb(20, 221, 2);
+    text-decoration: none;
+    font-size: 16px; 
+  }
   
   .container {
     display: block;
