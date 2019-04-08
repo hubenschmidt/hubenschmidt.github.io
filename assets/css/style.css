@@ -22,8 +22,6 @@
     }
   }
 
-
-
   .poem{
     
     font-family: 'Cedarville Cursive', cursive;
@@ -54,6 +52,7 @@
 
 body{
     /* background-image: url("abstractbg.png"); */
+    background-color:black;
     color: yellow;
     font-size:16px;
     background-repeat: no-repeat;
