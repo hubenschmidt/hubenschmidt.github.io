@@ -53,7 +53,8 @@
    }
 
 body{
-    background-image: url("abstractbg.png");
+    /* background-image: url("abstractbg.png"); */
+    color: yellow;
     font-size:16px;
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;   
