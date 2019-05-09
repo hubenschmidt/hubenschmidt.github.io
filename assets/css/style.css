@@ -1,6 +1,11 @@
 
 
 /* Add some content at the bottom of the video/page */
+
+.underline{
+  text-decoration: underline;
+}
+
 .content {
     position: absolute;
     bottom: 0;
@@ -34,8 +39,8 @@
   a:hover, a:active { 
     /* color: rgb(255, 0, 0); */
     text-decoration: none;
-    background-color: #0096c1;
-    color: #00303e;
+    background-color: rgb(53, 176, 0);
+    color: #000000;
   }
 
  
@@ -72,6 +77,10 @@ body{
   color: #efe158;
 }
 
+a.menu:hover{
+  background-color: #efe158;
+}
+
 footer {
     left: 0;
     bottom: 0;
@@ -101,8 +110,8 @@ footer {
   }
 
   .selected {
-    color: #00303e;
-    background: #0057c1; 
+    color: #000000;
+    background: rgb(77, 255, 0);
   }
   
   .white {
