@@ -1,6 +1,6 @@
-function displayWork(sample){
-    var sample = 'programming'
-    return 'Samples of my work '+sample+' in JavaScript.'
+const aboutMe = () =>{
+    let page = 'biography'
+    return 'information and '+page+' about'
 }
 
-console.log(displayWork())
+console.log(aboutMe())
