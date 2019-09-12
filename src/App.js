@@ -8,43 +8,46 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Introduction from "../src/components/Introduction"
+import Introduction from "../src/components/Introduction";
+import Projects from "../src/components/Projects"
 
 //grid examples
 
 const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 0,
     display: "flex",
     flexDirection: "column",
     minHeight: "100vh",
-    background: 'black'
+    background: "black"
   },
-  main: {
-    marginTop: theme.spacing(8),
-    marginBottom: theme.spacing(2)
-  },
+
   footer: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(10),
     marginTop: "auto",
     backgroundColor: "white"
   },
   container: {
     // background: "black"
+    
   },
   grid: {
-    border: "1px solid blue"
+    border: "1px dotted blue",
+    marginBottom: "2px"
   },
   grid2: {
-    border: "1px solid yellow"
+    border: "1px dotted yellow",
+    marginBottom: "2px"
   },
   grid3: {
-    border: "1px dotted black"
+    border: "1px dotted red",
+    marginBottom: "2px"
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    color: theme.palette.text.secondary
+    color: theme.palette.text.secondary,
+    backgroundColor: 'black'
   }
 }));
 
@@ -67,15 +70,19 @@ function App() {
     <div className={classes.root}>
       <CssBaseline />
       <Container maxWidth="lg" className={classes.container}>
-        <Grid container spacing={3}>
+        <Grid container>
           <Grid item xs={12} className={classes.grid}>
             <Paper className={classes.paper}>xs=12</Paper>
           </Grid>
           <Grid item xs={12} sm={6} className={classes.grid2}>
-            <Introduction />
+            <Introduction spacing={0}/>
+            <Grid item xs={12} sm={12} className>
+             <Projects 
+             header="// projects--------------------------------------------------------------------------------------------------------------------------------------------" />
+            </Grid>
           </Grid>
           <Grid item xs={12} sm={6} className={classes.grid2}>
-            <Paper className={classes.paper}>xs=12 sm=6</Paper>
+            <Paper className={classes.paper}>window xs=12 sm=6</Paper>
           </Grid>
           <Grid item xs={6} sm={3} className={classes.grid3}>
             <Paper className={classes.paper}>xs=6 sm=3</Paper>
