@@ -6,7 +6,6 @@ import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import StickyFooter from "../src/components/StickyFooter";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Introduction from "../src/components/Introduction"
@@ -19,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     flexDirection: "column",
     minHeight: "100vh",
-    background: 'pink'
+    background: 'black'
   },
   main: {
     marginTop: theme.spacing(8),
@@ -31,7 +30,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: "white"
   },
   container: {
-    background: "blue"
+    // background: "black"
   },
   grid: {
     border: "1px solid blue"
@@ -73,9 +72,7 @@ function App() {
             <Paper className={classes.paper}>xs=12</Paper>
           </Grid>
           <Grid item xs={12} sm={6} className={classes.grid2}>
-            <Introduction></Introduction>
-    
-        
+            <Introduction />
           </Grid>
           <Grid item xs={12} sm={6} className={classes.grid2}>
             <Paper className={classes.paper}>xs=12 sm=6</Paper>
