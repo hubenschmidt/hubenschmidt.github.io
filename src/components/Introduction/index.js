@@ -13,6 +13,15 @@ const useStyles = makeStyles({
   yellow: {
     color: "yellow"
   },
+  white: {
+    color: "white"
+  },
+  fuschia: {
+      color: "red"
+  },
+  orange: {
+      color: "orange"
+  },
   grayLine: {
     color: "gray",
     // overflow: 'hidden',
@@ -34,8 +43,75 @@ export default function Introduction() {
       </Box>
       <Box component="div">
         <Box component="span">
-          <Typography variant="body1" className={classes.blue} display="inline">const </Typography>
-          <Typography variant="body1" className={classes.yellow} display="inline">displayWork </Typography>
+          <Typography variant="body1" className={classes.blue} display="inline">
+            const{" "}
+          </Typography>
+          <Typography
+            variant="body1"
+            className={classes.yellow}
+            display="inline"
+          >
+            williamRoy{" "}
+          </Typography>
+          <Typography
+            variant="body1"
+            className={classes.white}
+            display="inline"
+          >
+            ={" "}
+          </Typography>
+          <Typography
+            variant="body1"
+            className={classes.yellow}
+            display="inline"
+          >
+            ( ){" "}
+          </Typography>
+
+          <Typography 
+            variant="body1" 
+            className={classes.blue} 
+            display="inline">
+            =>{" "}
+          </Typography>
+
+          <Typography
+            variant="body1"
+            className={classes.white}
+            display="inline"
+          >
+            {"{"}{" "}
+          </Typography>
+          <Box component="div" marginLeft="20px">
+              <Box component="div">
+            <Typography variant="body1" className={classes.white} display="inline">
+              page ={" "}
+            </Typography>
+            <Typography variant="body1" className={classes.yellow} display="inline">
+              portfolio
+            </Typography>
+            <Typography variant="body1" className={classes.white} display="inline">
+              ;
+            </Typography>
+            </Box>
+            <Box component="div">
+            <Typography variant="body1" className={classes.fuschia} display="inline">
+              return{" "}
+            </Typography>
+            <Typography variant="body1" className={classes.orange} display="inline">
+              'Information and{" "}'{" "}
+            </Typography>
+            <Typography variant="body1" className={classes.white} display="inline">
+              +page+
+            </Typography>
+            <Typography variant="body1" className={classes.orange} display="inline">
+              '{" "} on software developer in Brooklyn'{" "}
+            </Typography>
+            </Box>
+          </Box>
+          <Typography variant="body1" className={classes.white}>
+              {"};"}
+            </Typography>
         </Box>
       </Box>
       // <span class="yellow">displayWork</span> = //{" "}
