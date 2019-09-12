@@ -114,18 +114,6 @@ export default function Introduction() {
             </Typography>
         </Box>
       </Box>
-      // <span class="yellow">displayWork</span> = //{" "}
-      <span className="yellow">() </span>
-      // <span className="blue">=> </span>
-      // {"{"}
-      // <br />
-      //{" "}
-      <div className="string-indent">
-        // <span className="fuschia">return </span>
-        // <span className="orange">'programming and web development'</span>
-        // <br />
-        //{" "}
-      </div>
     </Box>
   );
 }
