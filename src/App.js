@@ -67,13 +67,11 @@ function Copyright() {
   );
 }
 
-// function App() {
 class App extends Component {
   state = {
     projectData
   }
   render() {
-    // const classes = useStyles();
     const { classes } = this.props;
     return (
       <div className={classes.root}>
