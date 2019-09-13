@@ -24,35 +24,44 @@ class ProjectView extends Component {
   // console.log(project)
   // const project = props.projectData.find(proj => proj.id == ownProps.match.params.projId)
   state = {
-    project: {},
-  }
+    project: {}
+  };
 
-  componentDidMount() {
+  componentWillMount() {
     const projId = this.props.match.params.id;
-    const results = API.getProjects(projId)
-    this.setState( { project: results })
+    const results = API.getProjects(projId);
+    this.setState({ project: results });
   }
 
-  componentDidUpdate(){
+  componentDidUpdate() {
     // console.log(this.state.project[0])
-    const data = this.state.project[0]
+    const data = this.state.project;
+
+    data.map(el => console.log(el.url));
     // console.log(data.url)
-    // this.render()
+    this.render();
   }
 
   render() {
     const { classes } = this.props;
-    console.log(this.state.project[0])
+    // const data = this.state.project
 
+    // data.map(el=>console.log(el.id))
 
-    return (
+    return this.state.project.map(el => (
       <Box component="div" className={classes.root}>
-        <Typography variant="body1" className={classes.header}>
-          <h3>test</h3>
-          {/* <h2>{this.state}</h2> */}
-        </Typography>
+        <Box component="span" display="inline">
+          <Typography variant="body1" className={classes.header}>
+            {el.id}
+          </Typography>
+        </Box>
+        <Box component="span" display="inline">
+          <Typography variant="body1" className={classes.header}>
+            {el.description}{el.title}
+          </Typography>
+        </Box>
       </Box>
-    );
+    ));
   }
 }
 
