@@ -18,7 +18,6 @@ const useStyles = makeStyles({
 });
 
 export default function Projects(props) {
-    console.log(props)
   const classes = useStyles();
   return (
     <Box component="div" className={classes.root}>

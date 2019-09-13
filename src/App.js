@@ -4,14 +4,18 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Link from "@material-ui/core/Link";
 // import { makeStyles } from "@material-ui/core/styles";
-import { withStyles } from "@material-ui/styles"
+import { withStyles } from "@material-ui/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Introduction from "../src/components/Introduction";
 import Projects from "../src/components/Projects";
-import projectData from "../src/projects.json"
+import { Project, ProjectItem } from "./components/Project";
+import projectData from "../src/projects.json";
+import { Link as RouterLink } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ProjectView from '../src/components/ProjectView'
 
 //grid examples
 
@@ -28,22 +32,34 @@ const styles = theme => ({
   footer: {
     // padding: theme.spacing(10),
     marginTop: "auto",
-    backgroundColor: "white"
+    color: "white",
+    // backgroundColor: "white"
+    border: "1px dotted green"
   },
   container: {
     // background: "black"
   },
   grid: {
-    border: "1px dotted blue",
-    marginBottom: "2px"
+    border: "1px dotted green",
+    marginTop: "4px",
+    marginBottom: "4px",
+    borderLeft: "none",
+    borderRight: "none",
+    borderBottom: "none"
   },
   grid2: {
     border: "1px dotted yellow",
-    marginBottom: "2px"
+    marginBottom: "4px",
+    borderLeft: "none",
+    borderRight: "none",
+    borderBottom: "none"
   },
   grid3: {
     border: "1px dotted red",
-    marginBottom: "2px"
+    marginBottom: "4px",
+    borderLeft: "none",
+    borderRight: "none",
+    borderBottom: "none"
   },
   paper: {
     // padding: theme.spacing(2),
@@ -51,7 +67,6 @@ const styles = theme => ({
     // color: theme.palette.text.secondary,
     backgroundColor: "black"
   }
-  
 });
 
 function Copyright() {
@@ -70,11 +85,13 @@ function Copyright() {
 class App extends Component {
   state = {
     projectData
-  }
+  };
+
   render() {
     const { classes } = this.props;
     return (
       <div className={classes.root}>
+
         <CssBaseline />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container>
@@ -84,11 +101,36 @@ class App extends Component {
             <Grid item xs={12} sm={6} className={classes.grid2}>
               <Introduction spacing={0} />
               <Grid item xs={12} sm={12} className>
-                <Projects header="// projects--------------------------------------------------------------------------------------------------------------------------------------------" />
+                <Projects header="// projects--------------------------------------------------------------------------------------------------------------------------------------------">
+                  {this.state.projectData.length ? (
+                    <Project>
+                      {this.state.projectData.map(proj => (
+                        <ProjectItem key={proj.id}>
+                          <Link to={"/projects/" + proj.id}>
+                            <strong>{proj.title}</strong>
+                          </Link>
+                        </ProjectItem>
+                        // <ProjectItem
+                        //   id={proj.id}
+                        //   key={proj.id}
+                        //   name={proj.name}
+                        //   title={proj.title}
+                        //   url={proj.url}
+                        //   repo={proj.repo}
+                        //   image={proj.image}
+                        //   description={proj.description}
+                        // />
+                      ))}
+                    </Project>
+                  ): (<h3>No Results to Display</h3>)}
+                </Projects>
               </Grid>
             </Grid>
-            <Grid item xs={12} sm={6} className={classes.grid2}>
-              <Paper className={classes.paper}>window xs=12 sm=6</Paper>
+
+            <Grid item xs={12} sm={6} className>
+            <Router>
+            <Route exact path="/projects" component={ProjectView}/>
+        </Router>
             </Grid>
             <Grid item xs={6} sm={3} className={classes.grid3}>
               <Paper className={classes.paper}>xs=6 sm=3</Paper>
@@ -106,9 +148,7 @@ class App extends Component {
         </Container>
         <footer className={classes.footer}>
           <Container maxWidth="sm">
-            <Typography variant="body1">
-              My sticky footer can be found here.
-            </Typography>
+            <Typography variant="body1">footer</Typography>
             <Copyright />
           </Container>
         </footer>
