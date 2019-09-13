@@ -95,6 +95,8 @@ class Index extends Component {
 
   render() {
     const { classes } = this.props;
+
+  
     return (
       <div className={classes.root}>
         <CssBaseline />
@@ -136,17 +138,21 @@ class Index extends Component {
             </Grid>
 
             <Grid item xs={12} sm={6} className>
-              <Router>
+              {/* <ProjectView></ProjectView> */}
+              {/* <Router>
                   <Route exact path="/projects/:id" component={ProjectView} />;
+              </Router> */}
+              <Router>
+                <Route exact path="/projects/:id" component={ProjectView} />
               </Router>
-
-              {/* {this.state.projectData.map(proj=>{
-                <ProjectView
-                url={proj.url}
-                />              
-                })} */}
-
-
+              {/* {this.state.projectData.map(proj => {
+                <ProjectView url={proj.url} />;
+              })} */}
+            
+              {/* {this.state.projectData.filter(proj => proj.id == "1") {} (
+               
+                <ProjectView url={proj.url} />
+              ))} */}
               ;
             </Grid>
             <Grid item xs={6} sm={3} className={classes.grid3}>

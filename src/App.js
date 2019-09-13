@@ -96,11 +96,20 @@ class App extends Component {
 
   render() {
     const { classes } = this.props;
+
+    const AdminContainer = () => (
+      <Fragment>
+        <Index/>
+        <Route path="/projects/:id" component={ProjectView} />
+      </Fragment>
+    )
+
     return (
       <div>
         <Router>
           <Switch>
-            <Route exact path= "/" component={Index} />
+            <Route exact path= "/" component={AdminContainer} />
+            <Route exact path= "/projects/:id" component={AdminContainer} />
           </Switch>
         </Router>
       </div>
