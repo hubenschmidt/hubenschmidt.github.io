@@ -15,7 +15,8 @@ import { Project, ProjectItem } from "./components/Project";
 import projectData from "../src/projects.json";
 import { Link as RouterLink } from "react-router-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ProjectView from '../src/components/ProjectView'
+import ProjectView from "../src/components/ProjectView";
+import Index from "../src/pages/index.js"
 
 //grid examples
 
@@ -66,6 +67,12 @@ const styles = theme => ({
     textAlign: "center",
     // color: theme.palette.text.secondary,
     backgroundColor: "black"
+  },
+  projTitle: {
+    color: "green"
+  },
+  projDesc: {
+    color: "white"
   }
 });
 
@@ -90,68 +97,12 @@ class App extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.root}>
-
-        <CssBaseline />
-        <Container maxWidth="lg" className={classes.container}>
-          <Grid container>
-            <Grid item xs={12} className={classes.grid}>
-              <Paper className={classes.paper}>xs=12</Paper>
-            </Grid>
-            <Grid item xs={12} sm={6} className={classes.grid2}>
-              <Introduction spacing={0} />
-              <Grid item xs={12} sm={12} className>
-                <Projects header="// projects--------------------------------------------------------------------------------------------------------------------------------------------">
-                  {this.state.projectData.length ? (
-                    <Project>
-                      {this.state.projectData.map(proj => (
-                        <ProjectItem key={proj.id}>
-                          <Link to={"/projects/" + proj.id}>
-                            <strong>{proj.title}</strong>
-                          </Link>
-                        </ProjectItem>
-                        // <ProjectItem
-                        //   id={proj.id}
-                        //   key={proj.id}
-                        //   name={proj.name}
-                        //   title={proj.title}
-                        //   url={proj.url}
-                        //   repo={proj.repo}
-                        //   image={proj.image}
-                        //   description={proj.description}
-                        // />
-                      ))}
-                    </Project>
-                  ): (<h3>No Results to Display</h3>)}
-                </Projects>
-              </Grid>
-            </Grid>
-
-            <Grid item xs={12} sm={6} className>
-            <Router>
-            <Route exact path="/projects" component={ProjectView}/>
+      <div>
+        <Router>
+          <Switch>
+            <Route exact path= "/" component={Index} />
+          </Switch>
         </Router>
-            </Grid>
-            <Grid item xs={6} sm={3} className={classes.grid3}>
-              <Paper className={classes.paper}>xs=6 sm=3</Paper>
-            </Grid>
-            <Grid item xs={6} sm={3} className={classes.grid3}>
-              <Paper className={classes.paper}>xs=6 sm=3</Paper>
-            </Grid>
-            <Grid item xs={6} sm={3} className={classes.grid3}>
-              <Paper className={classes.paper}>xs=6 sm=3</Paper>
-            </Grid>
-            <Grid item xs={6} sm={3} className={classes.grid3}>
-              <Paper className={classes.paper}>xs=6 sm=3</Paper>
-            </Grid>
-          </Grid>
-        </Container>
-        <footer className={classes.footer}>
-          <Container maxWidth="sm">
-            <Typography variant="body1">footer</Typography>
-            <Copyright />
-          </Container>
-        </footer>
       </div>
     );
   }

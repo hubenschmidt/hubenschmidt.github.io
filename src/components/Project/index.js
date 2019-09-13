@@ -16,20 +16,21 @@ const useStyles = makeStyles({
   }
 });
 
-export function Project({ children }) {
+export function Project(props) {
   const classes = useStyles();
   return (
     <Box component="div" className>
-      <List>{children}</List>
+      <List>{props.children}</List>
     </Box>
   );
 }
 
 export function ProjectItem(props) {
+  console.log(props.children)
   const classes = useStyles();
   return (
     <Box component="div" className={classes.root}>
-      <Box component="span" className>
+      {/* <Box component="span" className>
         <Typography variant="body1" className={classes.green}>
           {props.title}
         </Typography>
@@ -38,10 +39,10 @@ export function ProjectItem(props) {
         <Typography variant="body1" className={classes.white}>
           {props.description}
         </Typography>
-      </Box>
-      {/* <Box component="span" className={classes.boxBody}>
-        {props.children}
       </Box> */}
+      <Box component="span" className={classes.boxBody}>
+        {props.children}
+      </Box>
     </Box>
   );
 }

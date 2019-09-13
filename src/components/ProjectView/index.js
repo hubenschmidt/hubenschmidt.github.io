@@ -16,7 +16,7 @@ export default function ProjectView(props) {
   return (
     <Box component="div" className={classes.root}>
       <Typography variant="body1" className={classes.header}> 
-        <h2>project view</h2>
+        <h2>{props.url}</h2>
       </Typography>
     </Box>
   );
