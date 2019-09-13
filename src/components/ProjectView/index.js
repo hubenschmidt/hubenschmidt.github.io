@@ -13,16 +13,7 @@ const styles = theme => ({
   }
 });
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    projId: ownProps.match.params.id
-  };
-};
-
 class ProjectView extends Component {
-  // const project = this.props.match.params.id
-  // console.log(project)
-  // const project = props.projectData.find(proj => proj.id == ownProps.match.params.projId)
   state = {
     project: {}
   };
@@ -33,21 +24,8 @@ class ProjectView extends Component {
     this.setState({ project: results });
   }
 
-  componentDidUpdate() {
-    // console.log(this.state.project[0])
-    const data = this.state.project;
-
-    data.map(el => console.log(el.url));
-    // console.log(data.url)
-    this.render();
-  }
-
   render() {
     const { classes } = this.props;
-    // const data = this.state.project
-
-    // data.map(el=>console.log(el.id))
-
     return this.state.project.map(el => (
       <Box component="div" className={classes.root}>
         <Box component="span" display="inline">
@@ -57,7 +35,8 @@ class ProjectView extends Component {
         </Box>
         <Box component="span" display="inline">
           <Typography variant="body1" className={classes.header}>
-            {el.description}{el.title}
+            {el.description}
+            {el.title}
           </Typography>
         </Box>
       </Box>
