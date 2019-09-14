@@ -6,7 +6,8 @@ import List from "@material-ui/core/List";
 
 const useStyles = makeStyles({
   root: {
-    marginBottom: "10px"
+    marginBottom: "10px",
+    lineHeight: "5"
   },
   white: {
     color: "white"

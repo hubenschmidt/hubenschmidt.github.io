@@ -11,31 +11,33 @@ import { withStyles } from "@material-ui/styles";
 import projectData from "../src/projects.json";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ProjectView from "../src/components/ProjectView";
-// import CssBaseline from "@material-ui/core/CssBaseline";
+import CssBaseline from "@material-ui/core/CssBaseline";
 import { createMuiTheme } from "@material-ui/core/styles";
 import {ThemeProvider} from "@material-ui/styles"
 
 import "./App.css";
 
 // const font = "'Anonymous Pro', monospace";
-const font = "Anonymous Pro, monospace";
+// const font = "Anonymous Pro, monospace";
+const font = "Gayathri"
 
 const theme = createMuiTheme({
   typography: {
-    fontFamily: font
+    fontFamily: font,
+  
   },
-  overrides: {
-    MuiTypography: {
-      body1: {
-        fontFamily: font,
-      }
-    },
-    MuiCssBaseline: {
-      '@global': {
-        '@font-face': font,
-      },
-  }
-}
+//   overrides: {
+//     MuiTypography: {
+//       body1: {
+//         fontFamily: font,
+//       }
+//     },
+//     MuiCssBaseline: {
+//       '@global': {
+//         '@font-face': font,
+//       },
+//   }
+// }
 })
 
 console.log(theme.typography.body1)
@@ -47,9 +49,12 @@ const styles = () => ({
     display: "flex",
     flexDirection: "column",
     minHeight: "100vh",
-    background: "black",
+    backgroundImage: "linear-gradient(#1d115d, #9F1159)",
+    lineHeight: "4",
+    fontSize: "2rem",
+    fontWeight: "1000",
+    letterSpacing: ".7px"
   },
-
   footer: {
     marginTop: "auto",
     color: "white",
@@ -61,14 +66,23 @@ const styles = () => ({
     marginBottom: "4px",
     borderLeft: "none",
     borderRight: "none",
-    borderBottom: "none"
+    borderBottom: "1px dotted yellow",
+
+    
   },
   grid2: {
     border: "1px dotted yellow",
     marginBottom: "4px",
     borderLeft: "none",
     borderRight: "none",
-    borderBottom: "none"
+    borderBottom: "none",
+  },
+  grid2a: {
+    border: "1px dotted yellow",
+    marginBottom: "4px",
+    borderLeft: "none",
+    borderRight: "none",
+    borderBottom: "none",
   },
   grid3: {
     border: "1px dotted red",
@@ -81,7 +95,7 @@ const styles = () => ({
     // padding: theme.spacing(2),
     textAlign: "center",
     // color: theme.palette.text.secondary,
-    backgroundColor: "black"
+    backgroundColor: "#170457"
   },
   projTitle: {
     color: "#4DFF00"
@@ -101,17 +115,18 @@ class App extends Component {
     return (
       <ThemeProvider theme={theme}>
         <div className={classes.root}>
-          {/* <CssBaseline /> */}
+          <CssBaseline />
+          <Grid item xs={12} className={classes.grid}>
+             
+                </Grid>
           <Container maxWidth="lg">
             <Grid container>
               <Router>
-                <Grid item xs={12} className={classes.grid}>
-                  <Paper className={classes.paper}>xs=12</Paper>
-                </Grid>
+      
                 <Grid item xs={12} sm={6} className={classes.grid2}>
                   <Introduction spacing={0} />
                 </Grid>
-                <Grid item xs={12} sm={6} className={classes.grid2}>
+                <Grid item xs={12} sm={6} className={classes.grid2a}>
                   <Projects header="// projects--------------------------------------------------------------------------------------------------------------------------------------------">
                     {this.state.projectData.length ? (
                       <Project>
@@ -143,14 +158,14 @@ class App extends Component {
             </Grid>
           </Container>
           <Grid item xs={12} sm={12} className={classes.grid2}>
-            <Paper className={classes.paper}>xs=6 sm=3</Paper>
+ 
           </Grid>
           <Grid item xs={12} sm={12} className={classes.grid2}>
-            <Paper className={classes.paper}>xs=6 sm=3</Paper>
+      
           </Grid>
           <footer className={classes.footer}>
             <Container maxWidth="lg">
-              <Typography>footer</Typography>
+              <Typography>Contact Me</Typography>
             </Container>
           </footer>
         </div>

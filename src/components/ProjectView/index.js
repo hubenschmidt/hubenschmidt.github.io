@@ -8,10 +8,13 @@ import API from "../../utils/API";
 // const useStyles = makeStyles({
 const styles = theme => ({
   root: {
-    backgroundColor: "black"
+    backgroundColor: "#009CFF"
   },
   header: {
-    color: "yellow"
+    color: "yellow",
+    fontSize: "1rem",
+    fontWeight: "1000",
+    boxShadow: "-2px -2px"
   }
 });
 

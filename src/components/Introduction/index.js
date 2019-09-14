@@ -6,21 +6,34 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles({
   root: {
     overflow: "hidden"
+    
   },
   blue: {
     color: "#258BFF"
   },
   yellow: {
-    color: "yellow"
+    color: "yellow",
+    fontWeight: "1000",
+    fontSize: "1.2rem"
+  },
+  yellow2: {
+    color: "yellow",
+    fontWeight: "1000",
+    // fontSize: "1.2rem"
   },
   white: {
     color: "white"
   },
   fuschia: {
-    color: "red"
+    color: "red",
+    fontSize: "1rem"
   },
   orange: {
-    color: "orange"
+    color: "orange",
+    fontWeight: "1000",
+    fontSize: "1rem"
+// background: "#005DFF",
+// textShadow: "1px 1px 0px #00e6e6, 0px 0px 0px #00bdbd "
   },
   grayLine: {
     color: "gray",
@@ -61,7 +74,7 @@ export default function Introduction() {
             className={classes.yellow}
             display="inline"
           >
-            ( ){" "}
+            (){" "}
           </Typography>
 
           <Typography className={classes.blue} display="inline">
@@ -86,7 +99,7 @@ export default function Introduction() {
               </Typography>
               <Typography
              
-                className={classes.yellow}
+                className={classes.yellow2}
                 display="inline"
               >
                 portfolio
@@ -108,6 +121,7 @@ export default function Introduction() {
               <Typography
                 className={classes.orange}
                 display="inline"
+
               >
                 'Information and '{" "}
               </Typography>
