@@ -74,7 +74,7 @@ export default function Introduction() {
             className={classes.yellow}
             display="inline"
           >
-            (){" "}
+            (hubenschmidt){" "}
           </Typography>
 
           <Typography className={classes.blue} display="inline">
@@ -140,7 +140,10 @@ export default function Introduction() {
             </Box>
           </Box>
           <Typography className={classes.white}>
-            {"};"}
+            {"};"} 
+          </Typography>
+          <Typography className={classes.white}>
+            {/* feel free to explore →↑ or contact below ←↓ */}
           </Typography>
         </Box>
       </Box>

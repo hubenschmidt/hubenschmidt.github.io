@@ -6,29 +6,27 @@ import List from "@material-ui/core/List";
 
 const useStyles = makeStyles({
   root: {
-    marginBottom: "10px",
-    lineHeight: "5"
+    marginBottom: "10px"
   },
   white: {
-    color: "white"
+    color: "red"
   }
 });
 
 export function Project(props) {
   const classes = useStyles();
   return (
-    <Box component="div" className>
+    <Box component="div">
       <List>{props.children}</List>
     </Box>
   );
 }
 
 export function ProjectItem(props) {
-  console.log(props.children)
   const classes = useStyles();
   return (
     <Box component="div" className={classes.root}>
-      <Box component="span" className={classes.boxBody}>
+      <Box component="span">
         {props.children}
       </Box>
     </Box>
