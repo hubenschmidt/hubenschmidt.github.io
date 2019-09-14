@@ -5,8 +5,8 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   root: {
-      overflow: 'hidden'
-      
+      overflow: 'hidden',
+      justifyContent: "right"
   },
   grayLine: {
     // color: "gray",
@@ -14,7 +14,6 @@ const useStyles = makeStyles({
   },
   green: {
     color: "#4DFF00",
-
 },
   gray: {
       color: "gray"

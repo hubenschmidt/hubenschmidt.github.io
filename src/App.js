@@ -36,8 +36,6 @@ const theme = createMuiTheme({
   // }
 });
 
-console.log(theme.typography.body1);
-
 //grid examples
 const styles = () => ({
   root: {
@@ -146,8 +144,6 @@ class App extends Component {
       <ThemeProvider theme={theme}>
         <div className={classes.root}>
           <CssBaseline />
-          {/* <Grid item xs={12} className={classes.grid}></Grid>
-           */}
 
           <Container maxWidth="lg">
             <Grid container>
@@ -179,47 +175,45 @@ class App extends Component {
                   </Projects>
                 </Grid>
                 <Route exact path="/projects/:id" component={ProjectView} />
-
-                
               </Router>
             </Grid>
           </Container>
           <Grid item xs={12} sm={12} className={classes.grid2a}></Grid>
           <Grid item xs={12} sm={12} className={classes.grid2}>
-           
-              <Typography>
-                <a
-                  href="https://github.com/hubenschmidt"
-                  target="_blank"
-                  className={classes.footer_a}
-                >
-                  github
-                </a>
-              </Typography>
-              <Typography>
-                <a
-                  href="https://linkedin.com/in/williamhubenschmidt"
-                  target="_blank"
-                  className={classes.footer_b}
-                >
-                  linkedin
-                </a>
-              </Typography>
-              <Typography>
-                <a
-                  href="/assets/William Hubenschmidt, Developer.pdf"
-                  target="_blank"
-                  className={classes.footer_c}
-                >
-                  resume
-                </a>
-              </Typography>
-
+            <Typography>
+              <a
+                href="https://github.com/hubenschmidt"
+                target="_blank"
+                className={classes.footer_a}
+              >
+                github
+              </a>
+            </Typography>
+            <Typography>
+              <a
+                href="https://linkedin.com/in/williamhubenschmidt"
+                target="_blank"
+                className={classes.footer_b}
+              >
+                linkedin
+              </a>
+            </Typography>
+            <Typography>
+              <a
+                href="/assets/William Hubenschmidt, Developer.pdf"
+                target="_blank"
+                className={classes.footer_c}
+              >
+                resume
+              </a>
+            </Typography>
           </Grid>
           <Grid item xs={12} sm={12} className={classes.grid2}></Grid>
           <footer className={classes.footer}>
             <Container maxWidth="lg">
-              <Typography style={{marginLeft: "150px"}}>2019 © William Hubenschmidt</Typography>
+              <Typography style={{ marginLeft: "150px" }}>
+                2019 © William Hubenschmidt
+              </Typography>
             </Container>
           </footer>
         </div>

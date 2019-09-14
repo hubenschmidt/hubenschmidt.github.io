@@ -10,7 +10,8 @@ const useStyles = makeStyles({
   },
   white: {
     color: "red"
-  }
+  },
+
 });
 
 export function Project(props) {
