@@ -6,7 +6,6 @@ import Projects from "../src/components/Projects";
 import { Project, ProjectItem } from "../src/components/Project";
 import { Link } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
 import { withStyles } from "@material-ui/styles";
 import projectData from "../src/projects.json";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -14,7 +13,6 @@ import ProjectView from "../src/components/ProjectView";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
-
 import "./App.css";
 
 // const font = "'Anonymous Pro', monospace";
