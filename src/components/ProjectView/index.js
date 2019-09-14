@@ -29,12 +29,8 @@ class ProjectView extends Component {
   componentWillReceiveProps(nextProps) {
     const projId = nextProps.match.params.id;
     const results = API.getProjects(projId);
-    this.state.project = results;
-  }
-
-  handleChange() {
-    const projId = this.props.match.params.id;
-    const results = API.getProjects(projId);
+    this.setState({ project: results })
+    // this.state.project = results;
   }
 
   render() {
@@ -42,10 +38,10 @@ class ProjectView extends Component {
     return this.state.project.map(el => (
       <Box component="div" className={classes.root}>
         <Box component="span" display="inline">
-          <Typography variant="body1" className={classes.header} />
+          <Typography className={classes.header} />
         </Box>
         <Box component="span" display="inline">
-          <Typography variant="body1" className={classes.header}>
+          <Typography className={classes.header}>
             {el.description}
             {el.title}
           </Typography>

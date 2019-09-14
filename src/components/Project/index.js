@@ -8,9 +8,6 @@ const useStyles = makeStyles({
   root: {
     marginBottom: "10px"
   },
-  green: {
-    color: "green"
-  },
   white: {
     color: "white"
   }

@@ -11,6 +11,9 @@ const useStyles = makeStyles({
     // color: "gray",
     whiteSpace: "nowrap"
   },
+  green: {
+    color: "#4DFF00"
+  },
   gray: {
       color: "gray"
   },
@@ -22,11 +25,11 @@ export default function Projects(props) {
   return (
     <Box component="div" className={classes.root}>
         <Box component="span" className={classes.grayLine}>
-      <Typography variant="body1" className={classes.gray}> 
+      <Typography className={classes.gray}> 
         {props.header}
       </Typography>
       </Box>
-      <Typography variant="body1" className={classes.green}>
+      <Typography className={classes.green}>
         {props.title}
       </Typography>
       <Box component="span" className={classes.boxBody}>
