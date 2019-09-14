@@ -30,16 +30,6 @@ export function ProjectItem(props) {
   const classes = useStyles();
   return (
     <Box component="div" className={classes.root}>
-      {/* <Box component="span" className>
-        <Typography variant="body1" className={classes.green}>
-          {props.title}
-        </Typography>
-      </Box>
-      <Box component="span" className>
-        <Typography variant="body1" className={classes.white}>
-          {props.description}
-        </Typography>
-      </Box> */}
       <Box component="span" className={classes.boxBody}>
         {props.children}
       </Box>

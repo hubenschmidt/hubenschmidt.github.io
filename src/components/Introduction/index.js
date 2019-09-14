@@ -24,21 +24,17 @@ const useStyles = makeStyles({
   },
   grayLine: {
     color: "gray",
-    // overflow: 'hidden',
-    // display: 'inline-block',
     whiteSpace: "nowrap"
   }
 });
 
-// export default Introduction = () => {
 export default function Introduction() {
   const classes = useStyles();
   return (
     <Box component="div" className={classes.root}>
       <Box component="span" className={classes.grayLine}>
         <Typography variant="body1">
-          // introduction
-          --------------------------------------------------------------------------------------------------------------------------------------------
+          {"// introduction--------------------------------------------------------------------------------------------------------------------------------------------"}
         </Typography>
       </Box>
       <Box component="div">

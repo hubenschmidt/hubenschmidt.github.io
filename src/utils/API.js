@@ -1,5 +1,4 @@
 import projectData from "../projects.json";
-import axios from "axios";
 
 export default {
   getProjects: function(id) {
