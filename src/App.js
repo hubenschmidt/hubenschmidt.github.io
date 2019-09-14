@@ -18,7 +18,6 @@ import { ThemeProvider } from "@material-ui/styles";
 import "./App.css";
 
 // const font = "'Anonymous Pro', monospace";
-// const font = "Anonymous Pro, monospace";
 const font = "Gayathri";
 
 const theme = createMuiTheme({
