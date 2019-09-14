@@ -1,5 +1,5 @@
 {
-  "homepage": "http://hubenschmidt.github.io/",
+  "homepage": "https://hubenschmidt.github.io/",
   "name": "hubenschmidt.github.io",
   "version": "0.1.0",
   "private": true,
@@ -16,7 +16,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
