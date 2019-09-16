@@ -55,7 +55,10 @@ const styles = () => ({
   footer: {
     marginTop: "auto",
     color: "white",
-    borderTop: "1px solid orange"
+    borderTop: "1px solid yellow",
+    // marginBottom: "20px"
+    paddingTop: "10px",
+    paddingBottom: "40px"
   },
   footer_a: {
     // marginTop: "auto",
@@ -103,26 +106,19 @@ const styles = () => ({
     paddingTop: "10px"
   },
   grid2a: {
-    border: "1px dotted yellow",
+    border: "4px groove #4DFF00",
     marginBottom: "2px",
     borderLeft: "none",
     borderRight: "none",
     borderBottom: "none",
     marginTop: "20px"
   },
-  grid2aa: {
+  grid2ab: {
+    border: "2px groove #4DFF00",
     marginBottom: "2px",
-    borderLeft: "none",
-    borderRight: "none",
-    borderBottom: "none",
-    marginTop: "100px"
   },
-  grid2b: {
-    border: "1px dotted yellow",
-    marginBottom: "4px",
-    borderLeft: "none",
-    borderRight: "none",
-    borderBottom: "none"
+  grid2aa: {
+    marginBottom: "20px",
   },
   grid3: {
     border: "1px dotted red",
@@ -139,6 +135,9 @@ const styles = () => ({
   projDesc: {
     color: "white",
     fontSize: ".7rem"
+  },
+  footerLink: {
+    color: "yellow"
   }
 });
 
@@ -156,6 +155,7 @@ class App extends Component {
           <Container maxWidth="lg">
             <Grid container>
               <Router>
+              <Grid item xs={12} sm={12} className={classes.grid2ab}></Grid>
                 <Grid item xs={12} sm={6} className={classes.grid2}>
                   <Introduction spacing={0} />
                 </Grid>
@@ -216,11 +216,18 @@ class App extends Component {
               </a>
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={12} className={classes.grid2}></Grid>
+          <Grid item xs={12} sm={12} className={classes.grid2a}></Grid>
           <footer className={classes.footer}>
             <Container maxWidth="lg">
-              <Typography style={{ marginLeft: "150px" }}>
-                2019 © WH
+              <Typography style={{ marginLeft: "0px" }}>
+                connect //{' '}
+                <a
+                className={classes.footerLink}
+                href="mailto:whubenschmidt@gmail.com"
+              >
+                whubenschmidt@gmail.com
+              </a>
+               {' '} 2019 © WH
               </Typography>
             </Container>
           </footer>
