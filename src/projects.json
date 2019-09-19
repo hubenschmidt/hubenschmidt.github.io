@@ -1,21 +1,22 @@
 [
     {
+        
+        "id": 15,
+        "name": "tame-your-wallet-survey",
+        "title": "tame-your-wallet-survey",
+        "url": "https://lit-inlet-94906.herokuapp.com/survey",
+        "repo": "",
+        "image": "/assets/images/tywdemo.png",
+        "description": "Creating digital tools for my friend's small business! Heroku link contains a customer survey demo. This React.js full stack implementation includes a CRM custom build, and is integrated with MailChimp. Developed with Node.js/React/Express/PostgreSQL."
+    },
+    {
         "id": 12,
         "name": "digitalCrates",
         "title": "digitalCrates",
         "url": "https://young-mesa-54357.herokuapp.com",
         "repo": "https://github.com/hubenschmidt/you-can-dig-it",
         "image": "/assets/images/digitalcrates.png",
-        "description": "Sync & stream Discogs record collection w/ matched YouTube links."
-    },
-    {
-        "id": 8,
-        "name": "tasteMaker",
-        "title": "tasteMaker",
-        "url": "https://whispering-fortress-56292.herokuapp.com",
-        "repo": "https://github.com/hubenschmidt/TasteMaker",
-        "image": "/assets/images/result.png",
-        "description": "Make friends with similar music taste."
+        "description": "Sync & stream Discogs record collection w/ matched YouTube links. Ad-free listening! React/Redux, OAuth, Socket.IO, MongoDB. "
     },
     {
         "id": 13,
@@ -27,6 +28,15 @@
         "description": "Cryptographic one-way hashing service."
     },
     {
+        "id": 8,
+        "name": "tasteMaker",
+        "title": "tasteMaker",
+        "url": "https://whispering-fortress-56292.herokuapp.com",
+        "repo": "https://github.com/hubenschmidt/TasteMaker",
+        "image": "/assets/images/result.png",
+        "description": "Make friends with similar music taste. A simple Express app."
+    },
+    {
         "id": 7,
         "name": "recordDistroCLI",
         "title": "recordDistroCLI",
@@ -34,6 +44,15 @@
         "repo": "https://github.com/hubenschmidt/Node-MySQL-Record-Distro",
         "image": "/assets/images/manager_addProduct.gif",
         "description": "Sales & inventory database with command line interface."
+    },
+    {
+        "id": 14,
+        "name": "course-catalog",
+        "title": "course-catalog",
+        "url": "https://infinite-sea-36887.herokuapp.com",
+        "repo": "https://github.com/hubenschmidt/course-catalog",
+        "image": "/assets/images/course-catalog.png",
+        "description": "React course catalog w/ content filtered by tag."
     },
     {
         "id": 1,
@@ -54,22 +73,13 @@
         "description": "Return search results for concerts, songs, & movies w/ command line interface."
     },
     {
-        "id": 14,
-        "name": "course-catalog",
-        "title": "course-catalog",
-        "url": "https://infinite-sea-36887.herokuapp.com",
-        "repo": "https://github.com/hubenschmidt/course-catalog",
-        "image": "/assets/images/course-catalog.png",
-        "description": "React course catalog w/ tags"
-    },
-    {
         "id": 10,
         "name": "recordScraper",
         "title": "recordScraper",
         "url": "https://sleepy-stream-41980.herokuapp.com",
         "repo": "https://github.com/hubenschmidt/RecordScraper",
         "image": "/assets/images/recordscraper.png",
-        "description": "Scrape, preview and save reggae releases."
+        "description": "Scrape, preview and save reggae releases. Express app and web scraper."
     }
 
 ]
