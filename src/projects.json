@@ -6,7 +6,7 @@
         "title": "cra-express-travis-ci",
         "repo": "https://github.com/hubenschmidt/cra-express-travis-ci",
         "image": "/assets/images/craexpresstravis.png",
-        "description": "Boilerplate for React application + RESTful API with NodeJS, Express, PostgreSQL, Sequelize, Travis CI, Mocha."
+        "description": "React application + RESTful API with NodeJS, Express, PostgreSQL, Sequelize, Travis CI, Mocha."
     },
     {
         
