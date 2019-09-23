@@ -1,11 +1,19 @@
 [
     {
         
+        "id": 16,
+        "name": "cra-express-travis-ci",
+        "title": "cra-express-travis-ci",
+        "repo": "https://github.com/hubenschmidt/cra-express-travis-ci",
+        "image": "/assets/images/craexpresstravis.png",
+        "description": "Boilerplate for React application + RESTful API with NodeJS, Express, PostgreSQL, Sequelize, Travis CI, Mocha."
+    },
+    {
+        
         "id": 15,
         "name": "tame-your-wallet-survey",
         "title": "tame-your-wallet-survey",
         "url": "https://lit-inlet-94906.herokuapp.com/survey",
-        "repo": "",
         "image": "/assets/images/tywdemo.png",
         "description": "Creating digital tools for my friend's small business! Heroku link contains a customer survey demo. This React.js full stack implementation includes a CRM custom build, and is integrated with MailChimp. Developed with Node.js/React/Express/PostgreSQL."
     },
@@ -22,7 +30,6 @@
         "id": 13,
         "name": "message-digest",
         "title": "message-digest",
-        "url": "",
         "repo": "https://github.com/hubenschmidt/message-digest",
         "image": "/assets/images/messagedigest.png",
         "description": "Cryptographic one-way hashing service."
@@ -40,7 +47,6 @@
         "id": 7,
         "name": "recordDistroCLI",
         "title": "recordDistroCLI",
-        "url": "",
         "repo": "https://github.com/hubenschmidt/Node-MySQL-Record-Distro",
         "image": "/assets/images/manager_addProduct.gif",
         "description": "Sales & inventory database with command line interface."
@@ -59,7 +65,6 @@
         "name": "99¢ Dreams Records",
         "title": "99¢ Radio 99¢ Dreams Records",
         "url": "http://www.99centradio.com",
-        "repo": "",
         "image": "/assets/images/99c.png",
         "description": "Record label launched in 2014."
     },
@@ -67,7 +72,6 @@
         "id": 6,
         "name": "language-interpreter-CLI",
         "title": "language-interpreter-CLI",
-        "url": "",
         "repo": "https://github.com/hubenschmidt/liri-node-app",
         "image": "/assets/images/liri-commands.gif",
         "description": "Return search results for concerts, songs, & movies w/ command line interface."

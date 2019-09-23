@@ -16,7 +16,7 @@ const styles = theme => ({
     padding: "8px"
   },
   desc: {
-    color: "white",
+    color: "yellow",
     fontSize: "14px",
     letterSpacing: "-0.002em",
     fontWeight: "0",
