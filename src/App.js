@@ -47,7 +47,7 @@ const styles = () => ({
     flexDirection: "column",
     minHeight: "100vh",
     // backgroundImage: "linear-gradient(#1d115d, #9F1159)",
-    backgroundImage: "linear-gradient(#1E3F3F, #2F2F2F)",
+    backgroundImage: "linear-gradient(#1E3F3F, black)",
     lineHeight: "0",
     // fontSize: "2rem",
     fontWeight: "1000",
@@ -129,9 +129,8 @@ const styles = () => ({
     borderBottom: "none"
   },
   projTitle: {
-    color: "#009CFF",
+    color: "yellow",
     textAlign: 'right',
-    fontSize: "12px"
   },
   projDesc: {
     color: "white",
