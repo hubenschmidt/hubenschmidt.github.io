@@ -33,7 +33,7 @@ const theme = createMuiTheme({
           fontFamily: font,
           fontSize: '14px',
           letterSpacing: "-.5px",
-          fontWeight: '200'
+          fontWeight: '400'
          
         }
       },
