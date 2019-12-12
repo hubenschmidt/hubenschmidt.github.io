@@ -31,6 +31,7 @@ const theme = createMuiTheme({
       MuiTypography: {
         body1: {
           fontFamily: font,
+          fontSize: '14px',
           letterSpacing: "-.5px",
           fontWeight: '200'
          
