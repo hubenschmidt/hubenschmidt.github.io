@@ -16,6 +16,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 import "./App.css";
+import { fontStyle } from "@material-ui/system";
 
 const font = "'Anonymous Pro', monospace";
 // const font = "'Karla', sans serif";
@@ -23,20 +24,24 @@ const font = "'Anonymous Pro', monospace";
 
 const theme = createMuiTheme({
   typography: {
-    fontFamily: font
+    fontFamily: font,
+    
+  },
+    overrides: {
+      MuiTypography: {
+        body1: {
+          fontFamily: font,
+          letterSpacing: "-.5px",
+          fontWeight: '200'
+         
+        }
+      },
+      MuiCssBaseline: {
+        '@global': {
+          '@font-face': font,
+        },
+    }
   }
-  //   overrides: {
-  //     MuiTypography: {
-  //       body1: {
-  //         fontFamily: font,
-  //       }
-  //     },
-  //     MuiCssBaseline: {
-  //       '@global': {
-  //         '@font-face': font,
-  //       },
-  //   }
-  // }
 });
 
 //grid examples

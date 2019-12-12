@@ -13,9 +13,10 @@
         "id": 15,
         "name": "tame-your-wallet-survey",
         "title": "tame-your-wallet-survey",
-        "url": "https://lit-inlet-94906.herokuapp.com/survey",
+        "url": "https://tameyourwallet.herokuapp.com/survey",
+        "repo": "https://hubenschmidt.github.io",
         "image": "/assets/images/tywdemo.png",
-        "description": "Creating digital tools for my friend's small business! Heroku link contains a customer survey demo. This React.js full stack implementation includes a CRM custom build, and is integrated with MailChimp. Developed with Node.js/React/Express/PostgreSQL."
+        "description": "CRM and customer survey app. Node.js/React/Express/PostgreSQL."
     },
     {
         "id": 12,
@@ -24,12 +25,13 @@
         "url": "https://young-mesa-54357.herokuapp.com",
         "repo": "https://github.com/hubenschmidt/you-can-dig-it",
         "image": "/assets/images/digitalcrates.png",
-        "description": "Sync & stream Discogs record collection w/ matched YouTube links. Ad-free listening! React/Redux, OAuth, Socket.IO, MongoDB. "
+        "description": "Sync & stream Discogs record collection w/ matched YouTube links, ad-free. Node, React/Redux, OAuth, Socket.IO, MongoDB. "
     },
     {
         "id": 13,
         "name": "message-digest",
         "title": "message-digest",
+        "url": "https://hubenschmidt.github.io",
         "repo": "https://github.com/hubenschmidt/message-digest",
         "image": "/assets/images/messagedigest.png",
         "description": "Cryptographic one-way hashing service."
@@ -47,6 +49,7 @@
         "id": 7,
         "name": "recordDistroCLI",
         "title": "recordDistroCLI",
+        "url": "https://hubenschmidt.github.io",
         "repo": "https://github.com/hubenschmidt/Node-MySQL-Record-Distro",
         "image": "/assets/images/manager_addProduct.gif",
         "description": "Sales & inventory database with command line interface."
@@ -65,6 +68,7 @@
         "name": "99¢ Dreams Records",
         "title": "99¢ Radio 99¢ Dreams Records",
         "url": "http://www.99centradio.com",
+        "repo": "https://hubenschmidt.github.io",
         "image": "/assets/images/99c.png",
         "description": "Record label launched in 2014."
     },

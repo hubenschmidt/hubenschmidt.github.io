@@ -8,18 +8,17 @@ const useStyles = makeStyles({
     overflow: "hidden"
   },
   blue: {
-    color: "#258BFF"
+    color: "#009CFF",
+    fontSize: "20px",
+    letterSpacing: "1px"
   },
   yellow: {
     color: "yellow",
     fontWeight: "1000",
-    fontSize: "1.2rem"
+    fontSize: "16px",
+    letterSpacing: "1px"
   },
-  yellow2: {
-    color: "yellow",
-    fontWeight: "1000"
-    // fontSize: "1.2rem"
-  },
+
   white: {
     color: "white"
   },
@@ -30,7 +29,8 @@ const useStyles = makeStyles({
   orange: {
     color: "#ff8300",
     fontWeight: "1000",
-    fontSize: "1rem"
+    fontSize: "20px",
+    letterSpacing: "-1px"
     // background: "#005DFF",
     // textShadow: "1px 1px 0px #00e6e6, 0px 0px 0px #00bdbd "
   },
@@ -60,17 +60,17 @@ export default function Introduction() {
       </Box>
       <Box component="div">
         <Box component="span">
-          <Typography className={classes.blue} display="inline">
+          {/* <Typography className={classes.blue} display="inline">
             const{" "}
-          </Typography>
+          </Typography> */}
           <Typography className={classes.yellow} display="inline">
-            williamRoy{" "}
+            William Roy{" "}
           </Typography>
           <Typography className={classes.white} display="inline">
             ={" "}
           </Typography>
           <Typography className={classes.blue} display="inline">
-            hubenschmidt{" "}
+            Hubenschmidt{" "}
           </Typography>
 
           <Typography className={classes.blue} display="inline">

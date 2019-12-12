@@ -8,17 +8,18 @@ import Link from "@material-ui/core/Link";
 const styles = theme => ({
   root: {},
   header: {
-    color: "yellow",
-    fontSize: "1rem",
+    color: "black",
+    letterSpacing: "-.5px",
+    fontSize: "28px",
     fontWeight: "0",
     boxShadow: "1px 1px 1px 1.5px yellow",
-    backgroundColor: "#009CFF",
+    backgroundColor: "yellow",
     padding: "8px"
   },
   desc: {
-    color: "yellow",
-    fontSize: "14px",
-    letterSpacing: "-0.002em",
+    color: "black",
+    fontSize: "20px",
+    letterSpacing: "-1.8px",
     fontWeight: "0",
     boxShadow: "1px 1px 1px 1.5px yellow",
     backgroundColor: "#009CFF",
@@ -26,7 +27,8 @@ const styles = theme => ({
   },
   link: {
     color: "yellow",
-    fontSize: "1rem",
+    letterSpacing: "-.5px",
+    fontSize: "20px",
     fontWeight: "0",
     boxShadow: "1px 1px 1px 1px yellow",
     padding: "8px",
@@ -42,7 +44,7 @@ const styles = theme => ({
     visibility: "hidden"
   },
   link_a: {
-    fontSize: "12px"
+    fontSize: "20px"
   },
   link_b: {
     marginLeft: "44px"
@@ -89,7 +91,7 @@ class ProjectView extends Component {
               target="_blank"
               className={classes.link_a}
             >
-              <strong>github</strong>
+              <strong>repo</strong>
             </Link>
             {' '}{' '} 
             <Link
@@ -98,7 +100,7 @@ class ProjectView extends Component {
               target="_blank"
               className={classes.link_a}
             >
-              <strong>heroku</strong>
+              <strong>link</strong>
             </Link>
           </Typography>
         </Box>
