@@ -41,7 +41,6 @@
         "title": "message-digest",
         "url": "https://hubenschmidt.github.io",
         "repo": "https://github.com/hubenschmidt/message-digest",
-        "image": "/assets/images/messagedigest.png",
         "description": "Cryptographic one-way hashing service."
     },
     {
@@ -70,15 +69,6 @@
         "repo": "https://github.com/hubenschmidt/course-catalog",
         "image": "/assets/images/course-catalog.png",
         "description": "React course catalog w/ content filtered by tag."
-    },
-    {
-        "id": 1,
-        "name": "99¢ Dreams Records",
-        "title": "99¢ Radio 99¢ Dreams Records",
-        "url": "http://www.99centradio.com",
-        "repo": "https://hubenschmidt.github.io",
-        "image": "/assets/images/99c.png",
-        "description": "Record label launched in 2014."
     },
     {
         "id": 6,
