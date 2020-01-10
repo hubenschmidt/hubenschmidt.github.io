@@ -1,6 +1,14 @@
 [
     {
         
+        "id": 17,
+        "name": "blog-search-api",
+        "title": "blog-search-api",
+        "repo": "https://github.com/hubenschmidt/blog-search-api",
+        "description": "API that retrieve blog post and author information on diverse topics in science, technology, history, health and design, and sorts the data according to your preferences."
+    },
+    {
+        
         "id": 16,
         "name": "cra-express-travis-ci",
         "title": "cra-express-travis-ci",

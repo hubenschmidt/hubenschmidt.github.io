@@ -92,8 +92,7 @@ class ProjectView extends Component {
               className={classes.link_a}
             >
               <strong>repo</strong>
-            </Link>
-            {' '}{' '} 
+            </Link>{" "}
             <Link
               color="inherit"
               href={el.url}
@@ -104,13 +103,15 @@ class ProjectView extends Component {
             </Link>
           </Typography>
         </Box>
-        <Box
-          component="div"
-          style={{ backgroundImage: `url("${el.image}")` }}
-          className={classes.img}
-        >
-          <Box className={classes.hide}>{el.image}</Box>
-        </Box>
+        {el.image ? (
+          <Box
+            component="div"
+            style={{ backgroundImage: `url("${el.image}")` }}
+            className={classes.img}
+          >
+            <Box className={classes.hide}>{el.image}</Box>
+          </Box>
+        ) : null}
       </Box>
     ));
   }
