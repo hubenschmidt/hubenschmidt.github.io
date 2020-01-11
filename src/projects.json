@@ -1,11 +1,20 @@
 [
     {
         
+        "id": 18,
+        "name": "product-scraper-crm",
+        "title": "product-scraper-crm",
+        "repo": "https://github.com/hubenschmidt/product-scraper-crm",
+        "image": "/assets/images/product-scraper.gif",
+        "description": "Scrape and search competitor product information. Add, edit and search customer relationship management data. React application + RESTful API with NodeJS, Express, PostgreSQL, Sequelize."
+    },
+    {
+        
         "id": 17,
         "name": "blog-search-api",
         "title": "blog-search-api",
         "repo": "https://github.com/hubenschmidt/blog-search-api",
-        "description": "API that retrieve blog post and author information on diverse topics in science, technology, history, health and design, and sorts the data according to your preferences."
+        "description": "API that queries blog posts on science, technology, history, health and design."
     },
     {
         

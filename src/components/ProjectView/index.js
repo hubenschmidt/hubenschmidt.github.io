@@ -9,7 +9,7 @@ const styles = theme => ({
   root: {},
   header: {
     color: "black",
-    letterSpacing: "-.5px",
+    // letterSpacing: "-.5px",
     fontSize: "28px",
     fontWeight: "0",
     boxShadow: "1px 1px 1px 1.5px yellow",
@@ -18,8 +18,8 @@ const styles = theme => ({
   },
   desc: {
     color: "black",
-    fontSize: "20px",
-    letterSpacing: "-1.8px",
+    fontSize: "14px",
+    letterSpacing: "-.5px",
     fontWeight: "0",
     boxShadow: "1px 1px 1px 1.5px yellow",
     backgroundColor: "#009CFF",
@@ -27,7 +27,7 @@ const styles = theme => ({
   },
   link: {
     color: "yellow",
-    letterSpacing: "-.5px",
+    // letterSpacing: "-.5px",
     fontSize: "20px",
     fontWeight: "0",
     boxShadow: "1px 1px 1px 1px yellow",
@@ -91,16 +91,18 @@ class ProjectView extends Component {
               target="_blank"
               className={classes.link_a}
             >
-              <strong>repo</strong>
+              <strong>repository</strong>
             </Link>{" "}
-            <Link
-              color="inherit"
-              href={el.url}
-              target="_blank"
-              className={classes.link_a}
-            >
-              <strong>link</strong>
-            </Link>
+            {el.url ? (
+              <Link
+                color="inherit"
+                href={el.url}
+                target="_blank"
+                className={classes.link_a}
+              >
+                <strong>link</strong>
+              </Link>
+            ) : null}
           </Typography>
         </Box>
         {el.image ? (

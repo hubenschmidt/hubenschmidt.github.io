@@ -19,9 +19,13 @@ import { ThemeProvider } from "@material-ui/styles";
 import "./App.css";
 import { fontStyle } from "@material-ui/system";
 
-const font = "'Anonymous Pro', monospace";
+// const font = "'Anonymous Pro', monospace";
 // const font = "'Karla', sans serif";
 // const font = "Gayathri";
+// const font = "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif"
+// const font = "'Open Sans', sans-serif";
+
+const font = "'Inconsolata', monospace"
 
 const theme = createMuiTheme({
   typography: {
@@ -33,7 +37,7 @@ const theme = createMuiTheme({
         body1: {
           fontFamily: font,
           fontSize: '14px',
-          letterSpacing: "-.5px",
+          // letterSpacing: "-.5px",
           fontWeight: '400'
          
         }
@@ -57,8 +61,8 @@ const styles = () => ({
     backgroundImage: "linear-gradient(#1E3F3F, black)",
     lineHeight: "0",
     // fontSize: "2rem",
-    fontWeight: "1000",
-    letterSpacing: ".7px"
+    // fontWeight: "1000",
+    // letterSpacing: ".7px"
   },
   footer: {
     marginTop: "auto",

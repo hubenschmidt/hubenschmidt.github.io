@@ -10,13 +10,13 @@ const useStyles = makeStyles({
   blue: {
     color: "#009CFF",
     fontSize: "20px",
-    letterSpacing: "1px"
+    // letterSpacing: "1px"
   },
   yellow: {
     color: "yellow",
     fontWeight: "1000",
     fontSize: "16px",
-    letterSpacing: "1px"
+    // letterSpacing: "1px"
   },
 
   white: {
@@ -30,7 +30,7 @@ const useStyles = makeStyles({
     color: "#ff8300",
     fontWeight: "1000",
     fontSize: "20px",
-    letterSpacing: "-1px"
+    // letterSpacing: "-1px"
     // background: "#005DFF",
     // textShadow: "1px 1px 0px #00e6e6, 0px 0px 0px #00bdbd "
   },
