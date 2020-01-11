@@ -103,7 +103,7 @@ export default function Introduction() {
                 + page +{" "}
               </Typography>
               <Typography className={classes.orange} display="inline">
-                ' on software developer in Brooklyn.'
+                ' on software developer in NY.'
               </Typography>
               <Typography className={classes.white} display="inline">
                 ;
