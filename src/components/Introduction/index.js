@@ -29,7 +29,7 @@ const useStyles = makeStyles({
   orange: {
     color: "#ff8300",
     fontWeight: "1000",
-    fontSize: "20px",
+    fontSize: "16px",
     // letterSpacing: "-1px"
     // background: "#005DFF",
     // textShadow: "1px 1px 0px #00e6e6, 0px 0px 0px #00bdbd "

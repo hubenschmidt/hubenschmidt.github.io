@@ -27,6 +27,8 @@ import { fontStyle } from "@material-ui/system";
 
 const font = "'Inconsolata', monospace"
 
+// const font = "'PT Serif', serif"
+
 const theme = createMuiTheme({
   typography: {
     fontFamily: font,
@@ -79,7 +81,11 @@ const styles = () => ({
     marginLeft: "40px",
     marginTop: "-14px",
     backgroundColor: "black",
-    fontSize: "1.9rem"
+    fontSize: "1.9rem",
+    textDecoration: 'none',
+    '&:hover': {
+      color: 'hotpink'
+    }
     // border: "1px dotted #4DFF00"
   },
   footer_b: {
@@ -88,7 +94,11 @@ const styles = () => ({
     marginLeft: "10px",
     marginBottom: "-1px",
     backgroundColor: "yellow",
-    fontSize: "1.2rem"
+    fontSize: "1.2rem",
+    textDecoration: 'none',
+    '&:hover': {
+      color: 'blue'
+    }
     // border: "1px dotted #4DFF00"
   },
   footer_c: {
@@ -97,7 +107,11 @@ const styles = () => ({
     marginLeft: "-20px",
     marginBottom: "-1px",
     backgroundColor: "green",
-    fontSize: "1.6rem"
+    fontSize: "1.6rem",
+    textDecoration: 'none',
+    '&:hover': {
+      color: 'yellow'
+    }
     // border: "1px dotted #4DFF00"
   },
   grid: {
@@ -148,7 +162,10 @@ const styles = () => ({
     fontSize: ".7rem"
   },
   footerLink: {
-    color: "yellow"
+    color: "yellow",
+    '&:hover': {
+      color: 'hotpink'
+    }
   }
 });
 
@@ -164,7 +181,42 @@ class App extends Component {
         <div className={classes.root}>
           <CssBaseline />
           <Container maxWidth="lg">
+
+             <Grid item xs={12} sm={12}  style={{paddingTop: '20px',float: 'right'}}>
+            <Typography>
+              <a
+                href="https://github.com/hubenschmidt"
+                target="_blank"
+                className={classes.footer_a}
+                style={{fontSize: '16px'}}
+              >
+                github
+              </a>
+            </Typography>
+            <Typography>
+              <a
+                href="https://linkedin.com/in/williamhubenschmidt"
+                target="_blank"
+                className={classes.footer_b}
+                style={{fontSize: '16px'}}
+              >
+                linkedin
+              </a>
+            </Typography>
+            <Typography>
+              <a
+                href="/assets/William Hubenschmidt, Developer.pdf"
+                target="_blank"
+                className={classes.footer_c}
+                style={{fontSize: '16px'}}
+              >
+                resume
+              </a>
+            </Typography>
+          </Grid>
+            
             <Grid container>
+              
               <Router>
               <Grid item xs={12} sm={12} className={classes.grid2ab}></Grid>
                 <Grid item xs={12} sm={6} className={classes.grid2}>
@@ -238,7 +290,7 @@ class App extends Component {
               >
                 whubenschmidt@gmail.com
               </a>
-               {' '} 2019 © WH
+               {' '} 2020 © WH
               </Typography>
             </Container>
           </footer>

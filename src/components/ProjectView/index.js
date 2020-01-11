@@ -77,6 +77,7 @@ class ProjectView extends Component {
           <Typography className={classes.header}>
             <strong>{el.title}</strong>
           </Typography>
+
           <br />
           <Typography className={classes.desc}>
             <strong>{el.description}</strong>
